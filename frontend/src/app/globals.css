@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-950: #0B0F17;
+  --color-slate-900: #101622;
+  --color-slate-800: #1a2235;
+  --color-slate-400: #8892b0;
+  --color-slate-50: #ccd6f6;
+  
+  --color-industrial-green: #22c55e;
+  --color-industrial-amber: #f59e0b;
+  --color-industrial-red: #ef4444;
+  --color-industrial-neon: #06b6d4;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-50 font-mono antialiased overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .border-neon {
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.1);
+  }
+  .border-danger {
+    border: 1px solid rgba(239, 68, 68, 0.5);
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.2);
+  }
+}
